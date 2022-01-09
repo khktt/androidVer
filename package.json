@@ -1,35 +1,21 @@
 {
-  "name": "manalearn",
+  "name": "KHKT",
+  "productName": "KHKT",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "author": "Administrator",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject",
-    "expoi": "expo install react-native-view-shot"
-  },
-  "dependencies": {
-    "crypto": "^1.0.1",
-    "dns": "^0.2.2",
-    "events": "^3.3.0",
-    "expo": "~44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "gmail-send": "^1.8.14",
-    "net": "^1.0.2",
-    "node-fetch": "^3.1.0",
-    "path": "^0.12.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-mail": "^6.1.1",
-    "react-native-view-shot": "3.1.2",
-    "react-native-web": "0.17.1",
-    "url": "^0.11.0"
+    "start": "electron ."
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "electron": "13.1.7"
   },
-  "private": true
+  "dependencies": {
+    "gmail-send": "^1.8.14",
+    "luxon": "^2.1.1",
+    "random-number": "0.0.9",
+    "systeminformation": "^5.9.15"
+  }
 }
