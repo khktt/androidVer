@@ -1,7 +1,6 @@
 var test={
     sendEmail(subject,to,body){
         
-        // SmtpJS.com - v3.0.0 
 
         //9ef65483-195a-440b-888f-24c20701e5dd
         let Email = { 
@@ -17,9 +16,10 @@ var test={
                 a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), 
                 a.onload = function () { 
                     var e = a.responseText; 
-                    null != t && t(e) }, 
-                    a.send(n) 
+                    null != t && t(e) 
                 }, 
+                a.send(n) 
+            }, 
             ajax: function (e, n) { 
                 var t = Email.createCORSRequest("GET", e); 
                 t.onload = function () { 
@@ -30,7 +30,9 @@ var test={
             }, 
             createCORSRequest: function (e, n) { 
                 var t = new XMLHttpRequest; 
-                return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+                return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t 
+            } 
+        };
     
         var emailU = "manalearn530@gmail.com";
         var pass = "aptx3561"
