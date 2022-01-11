@@ -6,7 +6,7 @@ import { Text, View, Image, StyleSheet, TouchableHighlight, WebView, Button } fr
 import {captureScreen} from "react-native-view-shot";
 import Mailer from 'react-native-mail';
 import BackgroundTask from 'react-native-background-task';
-import Email from "./Email";
+import Email from "./gmail";
 import BGRT from "./backgroundTask";
 
 //const email = require("gmail-send");
@@ -16,7 +16,8 @@ var emailU = "manalearn530@gmail.com";
 var pass = "aptx3561"
 const TASK_NAME = 'background-location-task';
 
-Email.sendEmail();
+//Email.sendEmail();
+Email();
 
 /*const sendP = email({
   user: emailU,
